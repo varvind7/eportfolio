@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,400;1,400&display=swap');
+
 #components-layout-demo-responsive .logo {
     height: 32px;
     background: rgba(255, 255, 255, 0.2);
@@ -13,28 +13,10 @@
     background: #fff;
   }
 
-  .img {
-      width: 300px;
-      height: 300px;
-      border-radius: 50%;
-  }
+ 
 
   .layout {
       background-color: #13293D;
   }
 
-  .about {
-    font-family: 'Nunito', sans-serif;
-  }
-  .about p {
-      font-size: 18px;
-      font-weight: 700;
-      
-  }
-  @media only screen and (max-width: 500px) {
-      .img {
-          width: 200px;
-          height: 200px;
-      }
-  }
   

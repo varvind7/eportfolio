@@ -1,6 +1,8 @@
-.ant-menu.ant-menu-dark .ant-menu-item-selected.menu {
+.ant-menu .ant-menu-item-selected.menu {
     background-color: #b2cdc5; /*Overriden property*/
   }
+
+
   .logo {
       width: 100%;
   }

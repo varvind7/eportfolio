@@ -14,16 +14,11 @@ const { Sider } = Layout;
 const NavBar = ()  => {
 
     return(
-        <div className="navbar">
-            <Sider
-      style={{
-        overflow: 'auto',
-        height: '100vh',
        
-        position: 'fixed',
-        left: 0,
-        background:'#45b29a'
-      }}
+           <Sider
+           style={{
+               backgroundColor:'#45b29a'
+           }}
       breakpoint="lg"
       collapsedWidth="0"
       onBreakpoint={broken => {
@@ -33,28 +28,23 @@ const NavBar = ()  => {
         console.log(collapsed, type);
       }}
     >
-           
-    >
-      <div className="logo" >
-      <Menu style={{background:'#45b29a',width:'100%'}}  theme="dark" mode="inline" defaultSelectedKeys={['4']}>
-        <Menu.Item key="1" icon={<UserOutlined />} className="menu" >
+      <div className="logo" />
+      <Menu style={{backgroundColor:'#45b29a'}} className="menu" theme="dark" mode="inline" defaultSelectedKeys={['4']}>
+        <Menu.Item key="1" icon={<UserOutlined />}>
           nav 1
         </Menu.Item>
-        <Menu.Item key="2" icon={<VideoCameraOutlined /> } className="menu">
+        <Menu.Item key="2" icon={<VideoCameraOutlined />}>
           nav 2
         </Menu.Item>
-        <Menu.Item key="3" icon={<UploadOutlined />} className="menu">
+        <Menu.Item key="3" icon={<UploadOutlined />}>
           nav 3
         </Menu.Item>
-        <Menu.Item key="4" icon={<BarChartOutlined />} className="menu">
+        <Menu.Item key="4" icon={<UserOutlined />}>
           nav 4
         </Menu.Item>
-     
-      </Menu> 
-      </div>
-     
+      </Menu>
     </Sider>
-        </div>
+      
     );
 }
 
