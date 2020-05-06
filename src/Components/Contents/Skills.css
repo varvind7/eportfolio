@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,400;1,400&display=swap');
+.main {
+    padding: 24px;
+   
+   
+    box-shadow: 5px 5px 20px;
+}
+
+.headSkills {
+    color: #386fa4;
+    font-weight: 500; 
+    font-size: 40px;
+ 
+}
+
+.site-card-wrapper {
+    background: #bce3fa;
+    padding: 30px;
+  }
+
+  .col {
+    margin: 5px 0;
+}
+
+  @media only screen and (max-width: 500px) {
+      
+}

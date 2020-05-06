@@ -2,3 +2,6 @@
 .layout{
   background-color: royalblue;
 }
+.ant-layout ant-layout-has-sider {
+  background-color: white;
+}

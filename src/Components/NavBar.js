@@ -1,6 +1,7 @@
 import React from 'react';
 import './NavBar.css';
 import { Layout, Menu } from 'antd';
+import {Link} from 'react-scroll';
 import {
   
   BarChartOutlined,
@@ -15,10 +16,17 @@ const NavBar = ()  => {
 
     return(
        
-           <Sider
-           style={{
-               backgroundColor:'#45b29a'
-           }}
+      <Sider
+      className="nav"
+      // style={{
+      //   //overflow: 'auto',
+      //   height: '100vh',
+      //   position: 'sticky',
+      //   left: 0,
+      //   backgroundColor:'#45b29a',
+      //   zIndex:100
+              
+      //      }}
       breakpoint="lg"
       collapsedWidth="0"
       onBreakpoint={broken => {
@@ -29,19 +37,19 @@ const NavBar = ()  => {
       }}
     >
       <div className="logo" />
-      <Menu style={{backgroundColor:'#45b29a'}} className="menu" theme="dark" mode="inline" defaultSelectedKeys={['4']}>
+      <Menu style={{backgroundColor:'#02040f',height:'100%'}} className="menu" theme="dark" mode="inline" defaultSelectedKeys={['4']}>
         <Menu.Item key="1" icon={<UserOutlined />}>
-          nav 1
+         <Link to="home" className="link" smooth={true} duration={1000}>Home</Link>
         </Menu.Item>
         <Menu.Item key="2" icon={<VideoCameraOutlined />}>
-          nav 2
+        <Link to="project" className="link" smooth={true} duration={1000}>Projects</Link>
         </Menu.Item>
         <Menu.Item key="3" icon={<UploadOutlined />}>
-          nav 3
+        <Link to="skills" className="link" smooth={true} duration={1000}>Skills</Link>
         </Menu.Item>
-        <Menu.Item key="4" icon={<UserOutlined />}>
+        {/* <Menu.Item key="4" icon={<UserOutlined />}>
           nav 4
-        </Menu.Item>
+        </Menu.Item> */}
       </Menu>
     </Sider>
       

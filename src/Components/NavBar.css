@@ -1,7 +1,7 @@
-.ant-menu .ant-menu-item-selected.menu {
-    background-color: #b2cdc5; /*Overriden property*/
-  }
 
+  .ant-menu.ant-menu-dark .ant-menu-item-selected {
+    background-color:#011627;
+  }
 
   .logo {
       width: 100%;
@@ -22,3 +22,31 @@
   .site-layout-background {
     background: #fff;
   }
+  .nav {
+    height: 100vh;
+        position: fixed;
+        left: 0;
+        background-color:#011627;
+        z-index:100;
+        
+  }
+  .link {
+    color: white;
+    font-weight: 500;
+  }
+  .link:active {
+    background-color: #40a9ff;
+    padding: 10px;
+    border-radius: 5%;
+  }
+
+  .link:hover {
+    color: orange;
+  }
+  @media only screen and (max-width: 500px) {
+    
+
+  }
+ 
+
+  
