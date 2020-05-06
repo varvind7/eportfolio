@@ -2,10 +2,15 @@ import React from 'react';
 import { Row, Col, Avatar } from 'antd';
 import profile from '../../assets/profile.jpg';
 import './Introduction.css';
+import coding from '../../assets/coding.jfif';
 
 const introduction = () => {
     return(
         <div id="home"  style={{ padding: 24, minHeight: 360, backgroundColor: '#fff' , boxShadow: '5px 5px 20px' }}>
+            <div className="try">
+                <h1>Hello, Im Arvind</h1>
+            </div>
+            {/* <img  style={{width:'100%'}} src={coding}/> */}
         <Row>
             <Col lg={8} xs={24}>
                 <img className="img" src={profile} />

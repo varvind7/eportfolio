@@ -20,26 +20,39 @@ const projects = () => {
             <div className="projects">
                 <div className="burger">
                     <Row justify="center">
-                        <Col > <h3 className="pTitle">MyBurger</h3></Col>
-                    </Row>
-                    <Row justify="center">
-                        <Col > <h3 className="burgerTools">React,Redux,FireBase</h3></Col>
-                    </Row>
-                    <Row justify="center">
-                        <Col > <img src={MyBurger}  className="projectImg burgerImg" /></Col>
-                    </Row>
+                        <Col className="burgerDiv" lg={12} xs={24}> 
+                        <Row justify="center">
+                            <Col>
+                            <h3 className="pTitle">MyBurger</h3>
+                            </Col>
+                            </Row>
+                            <Row justify="center">
+                                <Col>
 
-                    <Row justify="center">
-                        <Col > <Button className="btn" type="link" href="https://github.com/varvind7/BurgerBuilderReact"> GitHub
+                                <h3 className="burgerTools">React,Redux,FireBase</h3>
+                                </Col>
+                            </Row>
+                            <Row justify="center">
+                            <Col>
+                                <Button className="btn" type="link" href="https://github.com/varvind7/BurgerBuilderReact"> GitHub
                             <GithubOutlined/>
                             </Button>
-                        </Col>
-                        <Col  > <Button className="btn" type="link" href="https://react-my-burger-d91f2.web.app/"> Demo
+                                </Col>
+                                <Col>
+                                
+                            <Button className="btn" type="link" href="https://react-my-burger-d91f2.web.app/"> Demo
                         <EyeFilled /> 
                             </Button>
+                                </Col>
+                            </Row>
+                        
+                        
+                       
+                       
                         </Col>
-                      
+                        <Col lg={12} xs={24} > <img src={MyBurger}  className="projectImg burgerImg" /></Col>
                     </Row>
+                    
 
                     <Row justify="center">
                         <Col span={24}>
@@ -56,17 +69,23 @@ const projects = () => {
 
                 <div className="winhacks">
                     <Row justify="center">
-                        <Col > <h3 className="winHead">Lost In The Seperation (WinHacks 2020)</h3></Col>
-                    </Row>
-                    <Row justify="center">
-                        <Col > <h3 className="winhacksTools">React,Redux,FireBase,NodeJS</h3></Col>
-                    </Row>
-                    <Row justify="center">
-                        <Col > <img src={winhacks} className="projectImg" /></Col>
-                    </Row>
+                        <Col className="winhacksDiv" lg={12} xs={24}> 
+                        <Row justify="center">
+                            <Col>
+                            <h3 className="winHead">Lost In The Seperation (WinHacks 2020)</h3>
+                            </Col>
+                            </Row>
+                            <Row justify="center">
+                                <Col>
 
-                    <Row justify="center">
-                        <Col > <Button className="btn" type="link" href="https://github.com/varvind7/Winhacks2020"> GitHub
+                                <Col > <h3 className="winhacksTools">React,Redux,FireBase,NodeJS</h3></Col>
+                                </Col>
+                            </Row>
+                            <Row justify="center">
+                                
+
+
+                                <Col > <Button className="btn" type="link" href="https://github.com/varvind7/Winhacks2020"> GitHub
                             <GithubOutlined/>
                             </Button>
                         </Col>
@@ -78,8 +97,17 @@ const projects = () => {
                         <ExportOutlined /> 
                             </Button>
                         </Col>
-                      
+                            </Row>
+                        
+                        
+                       
+                       
+                        </Col >
+                        <Col lg={12} xs={24} ><div className="winhacksImg">
+                        <img src={winhacks} className="projectImg" />
+                            </div> </Col>
                     </Row>
+                    
 
                     <Row justify="center">
                         <Col span={24}>
@@ -97,6 +125,8 @@ A community is defined as a high density cluster of users. Upon sign-up, the use
 
 
                 </div>
+
+               
                 
 
                 <div className="library">
