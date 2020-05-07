@@ -2,8 +2,8 @@
 .main {
     padding: 24px;
    
+    background-color: white;
    
-    box-shadow: 5px 5px 20px;
 }
 
 .headSkills {
@@ -14,7 +14,7 @@
 }
 
 .site-card-wrapper {
-    background: #bce3fa;
+    background: #386fa4;
     padding: 30px;
   }
 

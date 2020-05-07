@@ -1,0 +1,23 @@
+.landingImg {
+
+    background-image: url('../../assets/coding.jfif');
+    height: 800px;
+    width: 100%;
+    background-attachment: fixed;
+   background-size: cover;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.mainLandDiv {
+    margin-top: 60px;
+    
+}
+.introText {
+    color: #386fa4;
+    font-size: 60px;
+}
+.name {
+    color: white;
+}

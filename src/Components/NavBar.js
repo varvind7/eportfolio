@@ -37,7 +37,7 @@ const NavBar = ()  => {
       }}
     >
       <div className="logo" />
-      <Menu style={{backgroundColor:'#02040f',height:'100%'}} className="menu" theme="dark" mode="inline" defaultSelectedKeys={['4']}>
+      <Menu style={{backgroundColor:'black',height:'100%'}} className="menu" theme="dark" mode="inline" defaultSelectedKeys={['4']}>
         <Menu.Item key="1" icon={<UserOutlined />}>
          <Link to="home" className="link" smooth={true} duration={1000}>Home</Link>
         </Menu.Item>

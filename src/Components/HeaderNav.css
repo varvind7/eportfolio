@@ -1,0 +1,27 @@
+.headNav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    padding-left: 60%;
+    
+}
+
+.linkHead {
+    color: black;
+    font-size: 18px;
+  }
+  .linkHead:hover {
+    color: orange;
+  }
+  
+
+@media only screen and (max-width: 500px) {
+
+.headNav {
+    align-items: flex-start;
+    padding-left: 0;
+    display: inline;
+
+}
+}

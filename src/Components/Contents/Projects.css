@@ -1,10 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,400;1,400&display=swap');
-.techSkills {
-   
-    margin: 30px 0;
-    box-shadow: 5px 5px 20px;
-  
-}
+
 
 .about {
     font-family: 'Nunito', sans-serif;
@@ -21,12 +16,13 @@
     font-size: 40px;
     justify-content: center;
     padding-top: 22px;
+   
  
 }
 
 .btn {
     font-size: 20px;
-    color: #000;
+    color: #2e3830;
 }
 
 .projects {
@@ -43,15 +39,18 @@
     color:white;
 }
 
-.burgerDiv {
+.skilltools {
     background: #386fa4;
-    box-shadow: 5px 5px 20px;
+    border-radius: 5px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    padding: 20px 20px;
+    margin: 30px 0;
+    box-shadow: 1px 5px 5px;
 }
-.burgerTools {
+.pTools {
     color:white;
     font-weight: 700;
     font-size: x-large;
@@ -60,7 +59,7 @@
     width: 500px;
     height: 500px;
     display: flex;
-    margin: 0 auto;
+    margin: 30px auto;
     justify-content: center;
     align-items: center;
     border-radius: 4px;
@@ -90,7 +89,7 @@
     font-size: 2.5em;
     margin: 0;
     padding: 0;
-    color:#386fa4;
+    color:white;
 }
 
 .winhacks p {
@@ -99,26 +98,25 @@
     color: #386fa4;
 }
 .winhacksTools {
-    color: #386fa4;
+    color: white;
     font-weight: 700;
     font-size: x-large;
 }
 .winhacksDiv {
     
-    
+    background-color: #386fa4;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
 .winhacksImg {
-    background: #386fa4;
-    box-shadow: 5px 5px 20px;
+    
     padding: 30px 0;
 }
 
 .library {
-    background: #386fa4;
+    background: white;
     padding: 10px;
 }
 
@@ -143,7 +141,7 @@
     font-size: 2.5em;
     margin: 0;
     padding: 0;
-    color:#386fa4;
+    color:white;
 }
 
 .hospital p {
@@ -152,7 +150,7 @@
     color: #386fa4;
 }
 .hospitalTools {
-    color: #386fa4;
+    color: white;
     font-weight: 700;
     font-size: x-large;
 }

@@ -14,11 +14,21 @@
     background: #fff;
   }
 
+  .head {
+    color: #386fa4;
+    font-weight: 500; 
+    font-size: 40px;
+    justify-content: center;
+    padding-top: 22px;
+ 
+}
   .try {
     background-image: url('../../assets/coding.jfif');
     height: 500px;
     width: 100%;
     background-attachment: fixed;
+   background-size: cover;
+   
   }
 
   .img {

@@ -1,117 +1,169 @@
 import React from 'react';
 import './Projects.css';
-import { Row, Col, Button } from 'antd';
-import { GithubOutlined, EyeFilled,ExportOutlined } from '@ant-design/icons';
+import { Row, Col, Button, Modal } from 'antd';
+import { GithubOutlined, EyeFilled, ExportOutlined, InfoCircleOutlined } from '@ant-design/icons';
 import MyBurger from '../../assets/MyBurger.JPG';
 import winhacks from '../../assets/winhacks.JPG';
 import library from '../../assets/library.JPG';
 import hospital from '../../assets/hospital.JPG'
 
 
-const projects = () => {
-    return (
-        <div id="project" className="techSkills about">
-            <Row justify="center">
-                <Col>
-                <h2 className="head">My Projects</h2>
-                </Col>
-            </Row>
-            
-            <div className="projects">
-                <div className="burger">
-                    <Row justify="center">
-                        <Col className="burgerDiv" lg={12} xs={24}> 
+class Projects extends React.Component {
+
+    state = { visible: false };
+
+    showModal = () => {
+        this.setState({
+            visible: true,
+        });
+    };
+    handleCancel = () => {
+        this.setState({ visible: false });
+    };
+
+    handleOk = e => {
+        console.log(e);
+        this.setState({
+            visible: false,
+        });
+    };
+    render() {
+
+
+        return (
+            <div id="project" className="about">
+
+
+                <div className="projects">
+
+                    <div className="burger">
+
                         <Row justify="center">
-                            <Col>
-                            <h3 className="pTitle">MyBurger</h3>
+                            <Col className="skilltools" lg={12} xs={24}>
+                                <Row justify="center">
+                                    <Col>
+                                        <h3 className="pTitle">MyBurger</h3>
+                                    </Col>
+                                </Row>
+                                <Row justify="center">
+                                    <Col>
+
+                                        <h3 className="pTools">React,Redux,FireBase</h3>
+                                    </Col>
+                                </Row>
+                                <Row justify="center">
+                                    <Col>
+                                        <Button className="btn" type="link" href="https://github.com/varvind7/BurgerBuilderReact"> GitHub
+                            <GithubOutlined />
+                                        </Button>
+                                    </Col>
+                                    <Col>
+
+                                        <Button className="btn" type="link" href="https://react-my-burger-d91f2.web.app/"> Demo
+                        <EyeFilled />
+                                        </Button>
+                                    </Col>
+                                </Row>
+
+                                <Row>
+                                    <Col>
+
+                                        <div>
+                                            <br />
+                                            <Button type="primary" onClick={this.showModal}>
+                                                <InfoCircleOutlined /> About
+                                            </Button>
+                                            <Modal
+                                                title="MyBurger"
+                                                visible={this.state.visible}
+                                                onOk={this.handleOk}
+                                                closable={false}
+                                                footer={[
+                                                    <Button key="Ok" onClick={this.handleOk}>
+                                                        Return
+                                                    </Button>,
+
+                                                ]}
+                                            >
+                                                <p>
+                                                    A complete React project developed through online tutorials in order to learn React and its other functionalities such as
+                                                    React components,state management, React hooks,Routing,React-Redux. The project is supported by Firebase backend.
+
+                                                </p>
+                                            </Modal>
+                                        </div>
+
+                                    </Col>
+                                </Row>
+
+
+
+
                             </Col>
-                            </Row>
-                            <Row justify="center">
-                                <Col>
-
-                                <h3 className="burgerTools">React,Redux,FireBase</h3>
-                                </Col>
-                            </Row>
-                            <Row justify="center">
-                            <Col>
-                                <Button className="btn" type="link" href="https://github.com/varvind7/BurgerBuilderReact"> GitHub
-                            <GithubOutlined/>
-                            </Button>
-                                </Col>
-                                <Col>
-                                
-                            <Button className="btn" type="link" href="https://react-my-burger-d91f2.web.app/"> Demo
-                        <EyeFilled /> 
-                            </Button>
-                                </Col>
-                            </Row>
-                        
-                        
-                       
-                       
-                        </Col>
-                        <Col lg={12} xs={24} > <img src={MyBurger}  className="projectImg burgerImg" /></Col>
-                    </Row>
-                    
-
-                    <Row justify="center">
-                        <Col span={24}>
-                            {/* <p>
-                                A complete React project developed through online tutorials in order to learn React and its other functionalities such as
-                                React components,state management, React hooks,Routing,React-Redux. The project is supported by Firebase backend.
-
-                        </p> */}
-                        </Col>
-                    </Row>
+                            <Col lg={12} xs={24} > <img src={MyBurger} className="projectImg burgerImg" /></Col>
+                        </Row>
 
 
-                </div>
 
-                <div className="winhacks">
-                    <Row justify="center">
-                        <Col className="winhacksDiv" lg={12} xs={24}> 
+                    </div>
+
+                    <div className="winhacks">
                         <Row justify="center">
-                            <Col>
-                            <h3 className="winHead">Lost In The Seperation (WinHacks 2020)</h3>
-                            </Col>
-                            </Row>
-                            <Row justify="center">
-                                <Col>
 
-                                <Col > <h3 className="winhacksTools">React,Redux,FireBase,NodeJS</h3></Col>
-                                </Col>
-                            </Row>
-                            <Row justify="center">
-                                
-
-
-                                <Col > <Button className="btn" type="link" href="https://github.com/varvind7/Winhacks2020"> GitHub
-                            <GithubOutlined/>
-                            </Button>
-                        </Col>
-                        <Col  > <Button className="btn" type="link" href="https://winhacks2020-88149.firebaseapp.com/"> Demo
-                        <EyeFilled /> 
-                            </Button>
-                        </Col>
-                        <Col  > <Button className="btn" type="link" href="https://devpost.com/software/lits-lost-in-the-separation"> DevPost
-                        <ExportOutlined /> 
-                            </Button>
-                        </Col>
-                            </Row>
-                        
-                        
-                       
-                       
-                        </Col >
-                        <Col lg={12} xs={24} ><div className="winhacksImg">
-                        <img src={winhacks} className="projectImg" />
+                            <Col lg={{ span: 12, order: 1 }} xs={{ span: 24, order: 2 }}  ><div className="winhacksImg">
+                                <img src={winhacks} className="projectImg" />
                             </div> </Col>
-                    </Row>
-                    
 
-                    <Row justify="center">
-                        <Col span={24}>
-                            {/* <p>
+                            <Col className="skilltools" lg={{ span: 12, order: 2 }} xs={{ span: 24, order: 1 }}>
+                                <Row justify="center">
+                                    <Col>
+                                        <h3 className="pTitle">Lost In The Seperation (WinHacks 2020)</h3>
+                                    </Col>
+                                </Row>
+                                <Row justify="center">
+                                    <Col>
+
+                                        <Col > <h3 className="pTools">React,Redux,FireBase,NodeJS</h3></Col>
+                                    </Col>
+                                </Row>
+                                <Row justify="center">
+
+
+
+                                    <Col > <Button className="btn" type="link" href="https://github.com/varvind7/Winhacks2020"> GitHub
+                            <GithubOutlined />
+                                    </Button>
+                                    </Col>
+                                    <Col  > <Button className="btn" type="link" href="https://winhacks2020-88149.firebaseapp.com/"> Demo
+                        <EyeFilled />
+                                    </Button>
+                                    </Col>
+                                    <Col  > <Button className="btn" type="link" href="https://devpost.com/software/lits-lost-in-the-separation"> DevPost
+                        <ExportOutlined />
+                                    </Button>
+                                    </Col>
+                                </Row>
+                                <Row>
+                                    <Col>
+
+                                        <div>
+                                            <br />
+                                            <Button type="primary" onClick={this.showModal}>
+                                                <InfoCircleOutlined /> About
+                                            </Button>
+                                            <Modal
+                                                title="WinHacks 2020"
+                                                visible={this.state.visible}
+                                                onOk={this.handleOk}
+                                                closable={false}
+                                                footer={[
+                                                    <Button key="Ok" onClick={this.handleOk}>
+                                                        Return
+                                                    </Button>,
+
+                                                ]}
+                                            >
+                                               <p>
                             A prototype built for WinHacks 2020:the application is a website that allows users to connect to those around them through a news forum board. 
                             This board contains updates from the members of the community about their situations. Additionally, 
                             the user will be given the option to connect to a random community around the world. This will embark them on a journey through five communities 
@@ -119,76 +171,185 @@ const projects = () => {
 
 A community is defined as a high density cluster of users. Upon sign-up, the user will be assigned a community based upon their location.
 
-                        </p> */}
-                        </Col>
-                    </Row>
+                        </p>
+                                            </Modal>
+                                        </div>
+
+                                    </Col>
+                                </Row>
 
 
-                </div>
 
-               
-                
+                            </Col >
+                        </Row>
 
-                <div className="library">
-                    <Row justify="center">
-                        <Col > <h3 className="pTitle">Library Study Room Booking Assistance </h3></Col>
-                    </Row>
-                    <Row justify="center">
-                        <Col > <h3 className="libraryTools">React,Redux,IBM Watson,Ant Design</h3></Col>
-                    </Row>
-                    <Row justify="center">
-                        <Col > <img src={library} className="projectImg" /></Col>
-                    </Row>
 
-                    <Row justify="center">
-                        <Col > <Button className="btn" type="link" href="https://github.com/varvind7/LibraryWindsor"> GitHub
-                            <GithubOutlined/>
-                            </Button>
-                        </Col>
-                      
-                      
-                    </Row>
+                        
 
-                    <Row justify="center">
-                        <Col span={24}>
-                            {/* <p>
+
+                    </div>
+
+
+
+
+                    <div className="library">
+                        <Row justify="center">
+                            <Col className="skilltools" lg={12} xs={24}>
+                                <Row justify="center">
+                                    <Col>
+                                        <h3 className="pTitle">Library Study Room Booking Assistance </h3>
+                                    </Col>
+                                </Row>
+                                <Row justify="center">
+                                    <Col>
+
+                                        <h3 className="pTools">&emsp;&emsp;React,Redux
+                    {<br />}IBM Watson,Ant Design</h3>
+                                    </Col>
+                                </Row>
+                                <Row justify="center">
+                                    <Col > <Button className="btn" type="link" href="https://github.com/varvind7/LibraryWindsor"> GitHub
+                            <GithubOutlined />
+                                    </Button>
+                                    </Col>
+                                    
+                                    
+                                </Row>
+                                
+                                <Row>
+                                    <Col>
+
+                                        <div>
+                                            <br />
+                                            <Button type="primary" onClick={this.showModal}>
+                                                <InfoCircleOutlined /> About
+                                            </Button>
+                                            <Modal
+                                                title="Library"
+                                                visible={this.state.visible}
+                                                onOk={this.handleOk}
+                                                closable={false}
+                                                footer={[
+                                                    <Button key="Ok" onClick={this.handleOk}>
+                                                        Return
+                                                    </Button>,
+
+                                                ]}
+                                            >
+                                              <p>
+                            The purpose of this project is to focus on booking of group study rooms in the library to reduce ample of problems such as prior 
+                            knowledge of how many rooms are booked for group study so that we don’t need to physically go to the library. So when a student wants to book a room, 
+                            he/she can just look it up on the website if any rooms are currently available and proceed to book the rooms. The application aims to provide an automated way of booking rooms in the library over
+                             the web platform and maintains the feedback given by the students and analyzes the reviews given by them which then is acted upon if required so. 
+
+                        </p>
+                                            </Modal>
+                                        </div>
+
+                                    </Col>
+                                </Row>
+
+
+
+                            </Col>
+                            <Col lg={12} xs={24} > <img src={library} className="projectImg" /></Col>
+                        </Row>
+
+
+                        <Row justify="center">
+                            <Col span={24}>
+                                {/* <p>
                             The purpose of this project is to focus on booking of group study rooms in the library to reduce ample of problems such as prior 
                             knowledge of how many rooms are booked for group study so that we don’t need to physically go to the library. So when a student wants to book a room, 
                             he/she can just look it up on the website if any rooms are currently available and proceed to book the rooms. The application aims to provide an automated way of booking rooms in the library over
                              the web platform and maintains the feedback given by the students and analyzes the reviews given by them which then is acted upon if required so. 
 
                         </p> */}
-                        </Col>
-                    </Row>
+                            </Col>
+                        </Row>
 
 
-                </div>
-                
+                    </div>
 
-                <div className="hospital" id="hospital">
-                    <Row justify="center">
-                        <Col > <h3 className="hospTitle">Hospital Appointment Booking portal </h3></Col>
-                    </Row>
-                    <Row justify="center">
-                        <Col > <h3 className="hospitalTools">HTML,CSS,JavaScript,Servelet,JSP,MYSQL</h3></Col>
-                    </Row>
-                    <Row justify="center">
-                        <Col > <img src={hospital} className="projectImg" /></Col>
-                    </Row>
 
-                    <Row justify="center">
-                        <Col > <Button className="btn" type="link" href="https://github.com/varvind7/HospitalPortal"> GitHub
-                            <GithubOutlined/>
-                            </Button>
-                        </Col>
-                      
-                      
-                    </Row>
 
-                    <Row justify="center">
-                        <Col span={24}>
-                            {/* <p>
-                            A doctor patient handling, managing system that helps doctors in their work and also patients to book doctor appointments
+                    <div className="hospital">
+                        <Row justify="center">
+
+                            <Col lg={{ span: 12, order: 1 }} xs={{ span: 24, order: 2 }} ><div className="winhacksImg">
+                                <img src={hospital} className="projectImg" />
+                            </div> </Col>
+                            <Col className="skilltools" lg={{ span: 12, order: 2 }} xs={{ span: 24, order: 1 }}>
+                                <Row justify="center">
+                                    <Col>
+                                        <h3 className="pTitle">Hospital Appointment Booking portal </h3>
+                                    </Col>
+                                </Row>
+                                <Row justify="center">
+                                    <Col>
+
+                                        <h3 className="pTools">HTML,CSS,JavaScript
+                    {<br />}Servelet,JSP,MYSQL</h3>
+                                    </Col>
+                                </Row>
+                                <Row justify="center">
+
+                                    <Col > <Button className="btn" type="link" href="https://github.com/varvind7/HospitalPortal"> GitHub
+                            <GithubOutlined />
+                                    </Button>
+                                    </Col>
+
+
+                                </Row>
+                                <Row>
+                                    <Col>
+
+                                        <div>
+                                            <br />
+                                            <Button type="primary" onClick={this.showModal}>
+                                                <InfoCircleOutlined /> About
+                                            </Button>
+                                            <Modal
+                                                title="Hospital"
+                                                visible={this.state.visible}
+                                                onOk={this.handleOk}
+                                                closable={false}
+                                                footer={[
+                                                    <Button key="Ok" onClick={this.handleOk}>
+                                                        Return
+                                                    </Button>,
+
+                                                ]}
+                                            >
+                                              <p>
+                                              A doctor patient handling, managing system that helps doctors in their work and also patients to book doctor appointments
+                             and view medical progress. The system allows doctors to manage their booking slots online. Patients are allowed to book 
+                             empty slots online and those slots are reserved in their name. The system manages the appointment data for multiple doctors for various
+                              date and times. Each time a user visits a doctor his/her medical entry is stored in the database by doctor. Next time a user logs in he may view his/her entire medical
+                               history as and when needed. At the same time a doctor may view patients medical history even bore the patient visits him. This allows for an 
+                               automated patient doctor handling system through an online interface. Our system also consists of organ donor module. This module allows for organ donation registration as well as organ search. 
+                            The module is designed to help urgent organ requirements through easy/instant searches.
+
+                        </p>
+                                            </Modal>
+                                        </div>
+
+                                    </Col>
+                                </Row>
+
+
+
+
+
+                            </Col >
+
+                        </Row>
+
+
+                        <Row justify="center">
+                            <Col span={24}>
+                                {/* <p>
+                             A doctor patient handling, managing system that helps doctors in their work and also patients to book doctor appointments
                              and view medical progress. The system allows doctors to manage their booking slots online. Patients are allowed to book 
                              empty slots online and those slots are reserved in their name. The system manages the appointment data for multiple doctors for various
                               date and times. Each time a user visits a doctor his/her medical entry is stored in the database by doctor. Next time a user logs in he may view his/her entire medical
@@ -197,14 +358,21 @@ A community is defined as a high density cluster of users. Upon sign-up, the use
                             The module is designed to help urgent organ requirements through easy/instant searches.
 
                         </p> */}
-                        </Col>
-                    </Row>
+                            </Col>
+                        </Row>
+
+
+                    </div>
+
+
+
+
 
 
                 </div>
             </div>
-        </div>
-    );
+        );
+    }
 }
 
-export default projects;
+export default Projects;

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Row, Col, Card,Avatar } from 'antd';
+import { Row, Col, Card,Avatar,Divider } from 'antd';
 import './Skills.css';
 import react from '../../assets/react.png';
 import nodejs from '../../assets/nodejs.png';
@@ -23,13 +23,9 @@ const skill = () => {
     
     return(
         <div id="skills" className="main"> 
-              <Row justify="center">
-                <Col>
-                <h2 className="headSkills">My Skills</h2>
-               
-                </Col>
+              <Divider orientation="center"><h2 className="headSkills">My Skills</h2></Divider>
                 
-            </Row>
+            
             <Row justify="center">
                     <Col>
                     <h3>Platforms / Languages / Technologies / Frameworks / Tools</h3>
@@ -49,6 +45,7 @@ const skill = () => {
                <h2 style={{fontFamily:'Nunito'}}>React</h2> 
                 
                 <p style={{fontWeight:'700',fontFamily:'Nunito'}}> Skill Level: Intermediate</p>
+                <br/>
              </Col>
          </Row>
         </Card>
@@ -63,6 +60,7 @@ const skill = () => {
                <h2 style={{fontFamily:'Nunito'}}>NodeJS</h2> 
                 
                 <p style={{fontWeight:'700',fontFamily:'Nunito'}}> Skill Level: Intermediate</p>
+                <br/>
              </Col>
          </Row>
         </Card>
@@ -114,6 +112,7 @@ const skill = () => {
                <h2 style={{fontFamily:'Nunito'}}>Redux</h2> 
                 
                 <p style={{fontWeight:'700',fontFamily:'Nunito'}}> Skill Level: Intermediate</p>
+                <br/>
              </Col>
          </Row>
         </Card>
@@ -128,6 +127,7 @@ const skill = () => {
                <h2 style={{fontFamily:'Nunito'}}>Java</h2> 
                 
                 <p style={{fontWeight:'700',fontFamily:'Nunito'}}> Skill Level: Intermediate</p>
+                <br/>
              </Col>
          </Row>
         </Card>
@@ -192,6 +192,7 @@ const skill = () => {
                <h2 style={{fontFamily:'Nunito'}}>MongoDB</h2> 
                 
                 <p style={{fontWeight:'700',fontFamily:'Nunito'}}> Skill Level: Intermediate</p>
+                <br/>
              </Col>
          </Row>
         </Card>
@@ -255,6 +256,7 @@ const skill = () => {
                <h2 style={{fontFamily:'Nunito'}}>AntD</h2> 
                 
                 <p style={{fontWeight:'700',fontFamily:'Nunito'}}> Skill Level: Intermediate</p>
+                <br/>
              </Col>
          </Row>
         </Card>
@@ -269,6 +271,7 @@ const skill = () => {
                <h2 style={{fontFamily:'Nunito'}}>GIT</h2> 
                 
                 <p style={{fontWeight:'700',fontFamily:'Nunito'}}> Skill Level: Intermediate</p>
+                <br/>
                 
              </Col>
          </Row>

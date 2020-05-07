@@ -4,6 +4,7 @@ import { Layout } from 'antd';
 import Introduction from './Contents/Introduction';
 import Project from './Contents/Projects';
 import Skills from './Contents/Skills';
+import LandingImg from './Contents/LandingImg';
 
 const { Content, Footer } = Layout;
 
@@ -11,9 +12,12 @@ const MainLayout = () => {
     return (
         <div >
 
-            <Content style={{ margin: '24px 16px 0' }}>
-               
+            <Content >
+
+                
+                <LandingImg/>
                 <Introduction/>
+                
                 <Project/>
                 <Skills/>
             </Content>

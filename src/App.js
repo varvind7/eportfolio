@@ -4,7 +4,7 @@ import './App.css';
 import NavBar from './Components/NavBar';
 import MainLayout from './Components/MainLayout'
 import { Layout,Row,Col} from 'antd';
-
+import HeaderNav from './Components/HeaderNav';
 import {  Menu } from 'antd';
 import { UploadOutlined, UserOutlined, VideoCameraOutlined } from '@ant-design/icons';
 
@@ -20,17 +20,22 @@ const { Header, Content, Footer, Sider } = Layout;
 function App() {
 
   return(
-    <Layout>
-   <Row>
-     <Col >
-     <NavBar/>
-     </Col>
-   <Col offset={3} >
-   <MainLayout/>
-   </Col>
+  //   <Layout>
+  //  <Row>
+  //    <Col >
+  //    <NavBar/>
+  //    </Col>
+  //  <Col offset={3} >
+  //  <MainLayout/>
+  //  </Col>
    
-   </Row>
+  //  </Row>
    
+  // </Layout>
+
+  <Layout>
+    <HeaderNav/>
+    <MainLayout/>
   </Layout>
   );
  
