@@ -1,0 +1,43 @@
+.quote {
+    font-weight: 500;
+    color: orange;
+    font-family: 'Nunito', sans-serif;
+    font-size: 36px;
+}
+.connect {
+    font-weight: 500;
+    color: black;
+    font-family: 'Nunito', sans-serif;
+    font-size: 36px;
+}
+
+.conImg {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    transition: transform .5s;
+}
+.conImg:hover {
+    transform: scale(1.25); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+.conDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 150px;
+}
+
+@media only screen and (max-width: 500px) { 
+    .quote .connect {
+        font-size: 24px;
+    }
+    .conImg {
+        width: 150px;
+        height: 150px;
+        margin: 20px 0;
+    }
+    .conDiv {
+        margin: 30px 30%;
+    }
+    
+}

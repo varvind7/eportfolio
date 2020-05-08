@@ -6,7 +6,7 @@
   }
   .about p {
       font-size: 18px;
-      font-weight: 700;
+      font-weight: 500;
       
   }
 
@@ -154,9 +154,30 @@
     font-weight: 700;
     font-size: x-large;
 }
+
+.btnAbout {
+    background-color:  #f2f2f2;
+    border: 2px solid orange;
+    color: orange;
+    font-size: large;
+    
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+.btnAbout:focus {
+    background-color:  #f2f2f2;
+    border: 2px solid orange;
+    color: orange;
+}
+.btnAbout:hover {
+    background-color: orange;
+    color: white;
+}
 @media only screen and (max-width: 500px) {
     .projectImg {
         width: 200px;
         height: 200px;
     }
 }
+

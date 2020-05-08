@@ -15,9 +15,17 @@
     
 }
 .introText {
-    color: #386fa4;
+    color: orange;
     font-size: 60px;
+    text-shadow: 3px 3px 5px black;
 }
 .name {
     color: white;
+}
+
+@media only screen and (max-width: 500px) {
+    .introText {
+        font-size: 40px;
+        margin-left: 20%;
+    }
 }

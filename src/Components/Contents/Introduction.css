@@ -14,6 +14,13 @@
     background: #fff;
   }
 
+  .introDiv {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
   .head {
     color: #386fa4;
     font-weight: 500; 
@@ -48,7 +55,7 @@
   }
   .about p {
       font-size: 18px;
-      font-weight: 700;
+      font-weight: 500;
       
   }
  
@@ -56,6 +63,8 @@
       .img {
           width: 200px;
           height: 200px;
+          margin-left: 15%;
+          margin-bottom: 20px;
       }
   }
   

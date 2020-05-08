@@ -10,7 +10,7 @@ const LandingImg = () => {
         <div className="mainLandDiv">
              <div className="landingImg">
               <h1 className="introText">Hello, I'm <h1 className="name">Arvind Narayan Srinivasan</h1></h1>
-             </div>>
+             </div>
 
 
         </div>

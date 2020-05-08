@@ -3,14 +3,14 @@ import { Row, Col, Avatar } from 'antd';
 import profile from '../../assets/profile.jpg';
 import './Introduction.css';
 
-import { Divider } from 'antd';
+
 
 const introduction = () => {
     return(
-        <div id="home"  style={{ padding: 24, minHeight: 360, backgroundColor: '#fff'}}>
+        <div id="home" className="introDiv"  style={{ padding: 24, minHeight: 360, backgroundColor: '#fff'}}>
             
            
-        <Row>
+        <Row >
             <Col lg={8} xs={24}>
                 <img className="img" src={profile} />
             </Col>
@@ -34,7 +34,7 @@ const introduction = () => {
 
             </Col>
         </Row>
-        <Divider orientation="center"><h2 className="head">My Projects</h2></Divider>
+      
     </div>
     );
 };

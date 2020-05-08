@@ -1,0 +1,42 @@
+.education {
+    padding: 24px;
+    min-height: 360;
+    background: '#fff';
+}
+
+.head {
+    color: #386fa4;
+    font-weight: 500; 
+    font-size: 40px;
+    justify-content: center;
+    padding-top: 22px;
+ 
+}
+.educationDiv {
+  
+  margin: 10px 30px;
+}
+.school {
+  color: orange;
+  font-family: 'Nunito', sans-serif;
+ 
+}
+.details {
+    font-weight: 500;
+    font-size: 18px;
+    font-family: 'Nunito', sans-serif;
+}
+@media only screen and (max-width: 500px) {
+    .educationDiv {
+        padding: 60px 20px;
+        min-width: 280px;
+    }
+    .phnSchl {
+        margin-left: 30px;
+    }
+}
+
+
+
+
+

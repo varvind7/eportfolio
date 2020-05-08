@@ -4,16 +4,26 @@
     flex-direction: row;
     align-items: flex-end;
     padding-left: 60%;
+    border-bottom: 0.5px solid white;
     
+  
 }
 
+.ant-layout-header headNav {
+  padding-bottom: 40px;
+}
 .linkHead {
-    color: black;
+    color: white;
     font-size: 18px;
   }
   .linkHead:hover {
     color: orange;
   }
+
+  .menuItem {
+    
+  }
+  
   
 
 @media only screen and (max-width: 500px) {
@@ -22,6 +32,12 @@
     align-items: flex-start;
     padding-left: 0;
     display: inline;
+    border-bottom: 0.5px solid white;
+}
+
+.ant-layout-header  {
+  padding-bottom: 70px;
+  
 
 }
 }

@@ -10,21 +10,67 @@ import hospital from '../../assets/hospital.JPG'
 
 class Projects extends React.Component {
 
-    state = { visible: false };
+    state = { 
+        visibleBurger:false,
+        visibleWinhacks: false,
+        visibleLibrary: false,
+        visibleHospital: false,
 
-    showModal = () => {
+     };
+
+    showModalBurger = () => {
         this.setState({
-            visible: true,
+            visibleBurger: true,
         });
     };
-    handleCancel = () => {
-        this.setState({ visible: false });
-    };
+   
 
-    handleOk = e => {
+    handleOkBurger = e => {
         console.log(e);
         this.setState({
-            visible: false,
+            visibleBurger: false,
+        });
+    };
+
+    showModalWinhacks = () => {
+        this.setState({
+            visibleWinhacks: true,
+        });
+    };
+   
+
+    handleOkWinhacks = e => {
+        console.log(e);
+        this.setState({
+            visibleWinhacks: false,
+        });
+    };
+
+    showModalLibrary = () => {
+        this.setState({
+            visibleLibrary: true,
+        });
+    };
+   
+
+    handleOkLibrary = e => {
+        console.log(e);
+        this.setState({
+            visibleLibrary: false,
+        });
+    };
+
+    showModalHospital = () => {
+        this.setState({
+            visibleHospital: true,
+        });
+    };
+   
+
+    handleOkHospital = e => {
+        console.log(e);
+        this.setState({
+            visibleHospital: false,
         });
     };
     render() {
@@ -70,16 +116,16 @@ class Projects extends React.Component {
 
                                         <div>
                                             <br />
-                                            <Button type="primary" onClick={this.showModal}>
+                                            <Button className="btnAbout" type="primary" onClick={this.showModalBurger}>
                                                 <InfoCircleOutlined /> About
                                             </Button>
                                             <Modal
                                                 title="MyBurger"
-                                                visible={this.state.visible}
-                                                onOk={this.handleOk}
+                                                visible={this.state.visibleBurger}
+                                                onOk={this.handleOkBurger}
                                                 closable={false}
                                                 footer={[
-                                                    <Button key="Ok" onClick={this.handleOk}>
+                                                    <Button key="Ok" onClick={this.handleOkBurger}>
                                                         Return
                                                     </Button>,
 
@@ -148,16 +194,16 @@ class Projects extends React.Component {
 
                                         <div>
                                             <br />
-                                            <Button type="primary" onClick={this.showModal}>
+                                            <Button className="btnAbout" type="primary" onClick={this.showModalWinhacks}>
                                                 <InfoCircleOutlined /> About
                                             </Button>
                                             <Modal
                                                 title="WinHacks 2020"
-                                                visible={this.state.visible}
-                                                onOk={this.handleOk}
+                                                visible={this.state.visibleWinhacks}
+                                                onOk={this.handleOkWinhacks}
                                                 closable={false}
                                                 footer={[
-                                                    <Button key="Ok" onClick={this.handleOk}>
+                                                    <Button key="Ok" onClick={this.handleOkWinhacks}>
                                                         Return
                                                     </Button>,
 
@@ -221,16 +267,16 @@ A community is defined as a high density cluster of users. Upon sign-up, the use
 
                                         <div>
                                             <br />
-                                            <Button type="primary" onClick={this.showModal}>
+                                            <Button className="btnAbout" type="primary" onClick={this.showModalLibrary}>
                                                 <InfoCircleOutlined /> About
                                             </Button>
                                             <Modal
                                                 title="Library"
-                                                visible={this.state.visible}
-                                                onOk={this.handleOk}
+                                                visible={this.state.visibleLibrary}
+                                                onOk={this.handleOkLibrary}
                                                 closable={false}
                                                 footer={[
-                                                    <Button key="Ok" onClick={this.handleOk}>
+                                                    <Button key="Ok" onClick={this.handleOkLibrary}>
                                                         Return
                                                     </Button>,
 
@@ -306,16 +352,16 @@ A community is defined as a high density cluster of users. Upon sign-up, the use
 
                                         <div>
                                             <br />
-                                            <Button type="primary" onClick={this.showModal}>
+                                            <Button className="btnAbout"  onClick={this.showModalHospital}>
                                                 <InfoCircleOutlined /> About
                                             </Button>
                                             <Modal
                                                 title="Hospital"
-                                                visible={this.state.visible}
-                                                onOk={this.handleOk}
+                                                visible={this.state.visibleHospital}
+                                                onOk={this.handleOkHospital}
                                                 closable={false}
                                                 footer={[
-                                                    <Button key="Ok" onClick={this.handleOk}>
+                                                    <Button key="Ok" onClick={this.handleOkHospital}>
                                                         Return
                                                     </Button>,
 
@@ -343,22 +389,6 @@ A community is defined as a high density cluster of users. Upon sign-up, the use
 
                             </Col >
 
-                        </Row>
-
-
-                        <Row justify="center">
-                            <Col span={24}>
-                                {/* <p>
-                             A doctor patient handling, managing system that helps doctors in their work and also patients to book doctor appointments
-                             and view medical progress. The system allows doctors to manage their booking slots online. Patients are allowed to book 
-                             empty slots online and those slots are reserved in their name. The system manages the appointment data for multiple doctors for various
-                              date and times. Each time a user visits a doctor his/her medical entry is stored in the database by doctor. Next time a user logs in he may view his/her entire medical
-                               history as and when needed. At the same time a doctor may view patients medical history even bore the patient visits him. This allows for an 
-                               automated patient doctor handling system through an online interface. Our system also consists of organ donor module. This module allows for organ donation registration as well as organ search. 
-                            The module is designed to help urgent organ requirements through easy/instant searches.
-
-                        </p> */}
-                            </Col>
                         </Row>
 
 

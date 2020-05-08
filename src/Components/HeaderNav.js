@@ -23,13 +23,13 @@ const HeaderNav = () => {
         >
         <div className="logo" />
         <Menu style={{backgroundColor:'#386fa4',borderStyle:'none',width:'100%'}} mode="horizontal" >
-        <Menu.Item key="1" icon={<UserOutlined />}>
+        <Menu.Item className="menuItem" key="1" icon={<UserOutlined style={{color:'orange'}} />}>
          <Link to="home" className="linkHead" smooth={true} duration={1000}>Home</Link>
         </Menu.Item>
-        <Menu.Item key="2" icon={<VideoCameraOutlined />}>
+        <Menu.Item className="menuItem" key="2" icon={<VideoCameraOutlined style={{color:'orange'}} />}>
         <Link to="project" className="linkHead" smooth={true} duration={1000}>Projects</Link>
         </Menu.Item>
-        <Menu.Item key="3"  icon={<UploadOutlined />}>
+        <Menu.Item className="menuItem" key="3"  icon={<UploadOutlined style={{color:'orange'}} />}>
         <Link to="skills" className="linkHead" smooth={true} duration={1000}>Skills</Link>
         </Menu.Item>
         </Menu>
