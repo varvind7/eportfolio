@@ -36,7 +36,7 @@ const skill = () => {
 
         <Row gutter={16}>
           <Col className="col" xs={24} lg={6}>
-            <Card hoverable={true} >
+            <Card className="cardSkill" hoverable={true} >
               <Row justify='center'>
                 <Col span={12} >
                   <Avatar size={70} src={react} />
@@ -51,7 +51,7 @@ const skill = () => {
             </Card>
           </Col>
           <Col className="col" xs={24} lg={6}>
-            <Card hoverable={true} >
+            <Card className="cardSkill" hoverable={true} >
               <Row justify='center'>
                 <Col span={12} >
                   <Avatar size={70} src={nodejs} />
@@ -66,7 +66,7 @@ const skill = () => {
             </Card>
           </Col>
           <Col className="col" xs={24} lg={6}>
-            <Card hoverable={true} >
+            <Card className="cardSkill" hoverable={true} >
               <Row justify='center'>
                 <Col span={12} >
                   <Avatar size={70} src={express} />
@@ -75,13 +75,13 @@ const skill = () => {
                   <h2 style={{ fontFamily: 'Nunito' }}>ExpressJS</h2>
 
                   <p style={{ fontWeight: '700', fontFamily: 'Nunito' }}> Skill Level: Beginner</p>
-                  <br />
+                  
                 </Col>
               </Row>
             </Card>
           </Col>
           <Col className="col" xs={24} lg={6}>
-            <Card hoverable={true} >
+            <Card className="cardSkill" hoverable={true} >
               <Row justify='center'>
                 <Col span={12} >
                   <Avatar size={70} src={javascript} />
@@ -90,7 +90,7 @@ const skill = () => {
                   <h2 style={{ fontFamily: 'Nunito', fontSize: '19px' }}>JavaScript ES6+</h2>
 
                   <p style={{ fontWeight: '700', fontFamily: 'Nunito' }}> Skill Level: Advanced</p>
-                  <br />
+                  
                 </Col>
               </Row>
             </Card>
@@ -103,7 +103,7 @@ const skill = () => {
 
         <Row gutter={16}>
           <Col className="col" xs={24} lg={6}>
-            <Card hoverable={true} >
+            <Card className="cardSkill" hoverable={true} >
               <Row justify='center'>
                 <Col span={12} >
                   <Avatar size={70} src={redux} />
@@ -118,7 +118,7 @@ const skill = () => {
             </Card>
           </Col>
           <Col className="col" xs={24} lg={6}>
-            <Card hoverable={true} >
+            <Card className="cardSkill" hoverable={true} >
               <Row justify='center'>
                 <Col span={12} >
                   <Avatar size={70} src={java} />
@@ -133,7 +133,7 @@ const skill = () => {
             </Card>
           </Col>
           <Col className="col" xs={24} lg={6}>
-            <Card hoverable={true} >
+            <Card className="cardSkill" hoverable={true} >
               <Row justify='center'>
                 <Col span={12} >
                   <Avatar size={70} src={html} />
@@ -142,13 +142,13 @@ const skill = () => {
                   <h2 style={{ fontFamily: 'Nunito' }}>HTML 5</h2>
 
                   <p style={{ fontWeight: '700', fontFamily: 'Nunito' }}> Skill Level: Advanced</p>
-                  <br />
+                  
                 </Col>
               </Row>
             </Card>
           </Col>
           <Col className="col" xs={24} lg={6}>
-            <Card hoverable={true} >
+            <Card className="cardSkill" hoverable={true} >
               <Row justify='center'>
                 <Col span={12} >
                   <Avatar size={70} src={css} />
@@ -157,7 +157,7 @@ const skill = () => {
                   <h2 style={{ fontFamily: 'Nunito', fontSize: '19px' }}>CSS 3</h2>
 
                   <p style={{ fontWeight: '700', fontFamily: 'Nunito' }}> Skill Level: Advanced</p>
-                  <br />
+                  
                 </Col>
               </Row>
             </Card>
@@ -168,7 +168,7 @@ const skill = () => {
 
         <Row gutter={16}>
           <Col className="col" xs={24} lg={6}>
-            <Card hoverable={true} >
+            <Card className="cardSkill" hoverable={true} >
               <Row justify='center'>
                 <Col span={12} >
                   <Avatar size={70} src={cpp} />
@@ -177,13 +177,13 @@ const skill = () => {
                   <h2 style={{ fontFamily: 'Nunito' }}>C/C++</h2>
 
                   <p style={{ fontWeight: '700', fontFamily: 'Nunito' }}> Skill Level: Advanced</p>
-                  <br />
+                  
                 </Col>
               </Row>
             </Card>
           </Col>
           <Col className="col" xs={24} lg={6}>
-            <Card hoverable={true} >
+            <Card className="cardSkill" hoverable={true} >
               <Row justify='center'>
                 <Col span={12} >
                   <Avatar size={70} src={mongo} />
@@ -198,7 +198,7 @@ const skill = () => {
             </Card>
           </Col>
           <Col className="col" xs={24} lg={6}>
-            <Card hoverable={true} >
+            <Card className="cardSkill" hoverable={true} >
               <Row justify='center'>
                 <Col span={12} >
                   <Avatar size={70} src={mysql} />
@@ -207,13 +207,13 @@ const skill = () => {
                   <h2 style={{ fontFamily: 'Nunito' }}>MYSQL</h2>
 
                   <p style={{ fontWeight: '700', fontFamily: 'Nunito' }}> Skill Level: Advanced</p>
-                  <br />
+                  
                 </Col>
               </Row>
             </Card>
           </Col>
           <Col className="col" xs={24} lg={6}>
-            <Card hoverable={true} >
+            <Card className="cardSkill" hoverable={true} >
               <Row justify='center'>
                 <Col span={12} >
                   <Avatar size={70} src={vs} />
@@ -222,7 +222,7 @@ const skill = () => {
                   <h2 style={{ fontFamily: 'Nunito', fontSize: '19px' }}>VS Code</h2>
 
                   <p style={{ fontWeight: '700', fontFamily: 'Nunito' }}> Skill Level: Advanced</p>
-                  <br />
+                  
                 </Col>
               </Row>
             </Card>
@@ -232,7 +232,7 @@ const skill = () => {
 
         <Row gutter={16}>
           <Col className="col" xs={24} lg={6}>
-            <Card hoverable={true} >
+            <Card className="cardSkill" hoverable={true} >
               <Row justify='center'>
                 <Col span={12} >
                   <Avatar size={70} src={bootstrap} />
@@ -241,13 +241,13 @@ const skill = () => {
                   <h2 style={{ fontFamily: 'Nunito' }}>Bootstrap</h2>
 
                   <p style={{ fontWeight: '700', fontFamily: 'Nunito' }}> Skill Level: Advanced</p>
-                  <br />
+                 
                 </Col>
               </Row>
             </Card>
           </Col>
           <Col className="col" xs={24} lg={6}>
-            <Card hoverable={true} >
+            <Card className="cardSkill" hoverable={true} >
               <Row justify='center'>
                 <Col span={12} >
                   <Avatar size={70} src={antd} />
@@ -262,7 +262,7 @@ const skill = () => {
             </Card>
           </Col>
           <Col className="col" xs={24} lg={6}>
-            <Card hoverable={true} >
+            <Card className="cardSkill" hoverable={true} >
               <Row justify='center'>
                 <Col span={12} >
                   <Avatar size={70} src={git} />
@@ -278,7 +278,7 @@ const skill = () => {
             </Card>
           </Col>
           <Col className="col" xs={24} lg={6}>
-            <Card hoverable={true} >
+            <Card className="cardSkill" hoverable={true} >
               <Row justify='center'>
                 <Col span={12} >
                   <Avatar size={70} src={npm} />
@@ -287,7 +287,7 @@ const skill = () => {
                   <h2 style={{ fontFamily: 'Nunito', fontSize: '19px' }}>NPM</h2>
 
                   <p style={{ fontWeight: '700', fontFamily: 'Nunito' }}> Skill Level: Advanced</p>
-                  <br />
+                  
                 </Col>
               </Row>
             </Card>

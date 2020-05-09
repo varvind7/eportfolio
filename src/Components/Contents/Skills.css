@@ -18,8 +18,14 @@
     padding: 30px;
   }
 
+  .cardSkill {
+    padding: 35px 0;
+  }
+
   .col {
     margin: 5px 0;
+    padding: 5px 0;
+    
 }
 
   @media only screen and (max-width: 500px) {
