@@ -45,7 +45,7 @@ const skill = () => {
                   <h2 style={{ fontFamily: 'Nunito' }}>React</h2>
 
                   <p style={{ fontWeight: '700', fontFamily: 'Nunito' }}> Skill Level: Intermediate</p>
-                  <br />
+                 
                 </Col>
               </Row>
             </Card>
@@ -60,7 +60,7 @@ const skill = () => {
                   <h2 style={{ fontFamily: 'Nunito' }}>NodeJS</h2>
 
                   <p style={{ fontWeight: '700', fontFamily: 'Nunito' }}> Skill Level: Intermediate</p>
-                  <br />
+                  
                 </Col>
               </Row>
             </Card>
@@ -112,7 +112,7 @@ const skill = () => {
                   <h2 style={{ fontFamily: 'Nunito' }}>Redux</h2>
 
                   <p style={{ fontWeight: '700', fontFamily: 'Nunito' }}> Skill Level: Intermediate</p>
-                  <br />
+                  
                 </Col>
               </Row>
             </Card>
@@ -127,7 +127,7 @@ const skill = () => {
                   <h2 style={{ fontFamily: 'Nunito' }}>Java</h2>
 
                   <p style={{ fontWeight: '700', fontFamily: 'Nunito' }}> Skill Level: Intermediate</p>
-                  <br />
+                  
                 </Col>
               </Row>
             </Card>
@@ -192,7 +192,7 @@ const skill = () => {
                   <h2 style={{ fontFamily: 'Nunito' }}>MongoDB</h2>
 
                   <p style={{ fontWeight: '700', fontFamily: 'Nunito' }}> Skill Level: Intermediate</p>
-                  <br />
+                  
                 </Col>
               </Row>
             </Card>
@@ -256,7 +256,7 @@ const skill = () => {
                   <h2 style={{ fontFamily: 'Nunito' }}>AntD</h2>
 
                   <p style={{ fontWeight: '700', fontFamily: 'Nunito' }}> Skill Level: Intermediate</p>
-                  <br />
+                  
                 </Col>
               </Row>
             </Card>
@@ -271,7 +271,7 @@ const skill = () => {
                   <h2 style={{ fontFamily: 'Nunito' }}>GIT</h2>
 
                   <p style={{ fontWeight: '700', fontFamily: 'Nunito' }}> Skill Level: Intermediate</p>
-                  <br />
+                 
 
                 </Col>
               </Row>
