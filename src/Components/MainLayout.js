@@ -16,14 +16,14 @@ const MainLayout = () => {
 
             <Content >
 
-                
-                <LandingImg/>
 
-                <Introduction/>
-                <Education/>
-                <Project/>
-                <Skills/>
-                <Contact/>
+                <LandingImg />
+
+                <Introduction />
+                <Education />
+                <Project />
+                <Skills />
+                <Contact />
             </Content>
             <Footer style={{ textAlign: 'center' }}>My Profile ©2020 Created by Arvind Narayan Srinivasan</Footer>
         </div>

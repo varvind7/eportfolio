@@ -1,41 +1,43 @@
-import { Layout, Menu, Breadcrumb } from 'antd';
+import { Layout, Menu } from 'antd';
 import React from 'react';
-import {Link} from 'react-scroll';
+import { Link } from 'react-scroll';
 import './HeaderNav.css';
 import {
-  
-  BarChartOutlined,
-  UserOutlined,
-  UploadOutlined,
-  VideoCameraOutlined,
+  CommentOutlined,
+  HomeOutlined,
+  BulbOutlined,
+  CodeFilled,
 } from '@ant-design/icons';
-const { Header, Content, Footer } = Layout;
+const { Header } = Layout;
 
 const HeaderNav = () => {
 
-    return (
-        <div>
+  return (
+    <div>
 
-      
-        <Header className="headNav" style={{ position: 'fixed', zIndex: 1, width: '100%',backgroundColor:'#386fa4' }}
-        
-    
-        >
+
+      <Header className="headNav" style={{ position: 'fixed', zIndex: 1, width: '100%', backgroundColor: '#386fa4' }}
+
+
+      >
         <div className="logo" />
-        <Menu style={{backgroundColor:'#386fa4',borderStyle:'none',width:'100%'}} mode="horizontal" >
-        <Menu.Item className="menuItem" key="1" icon={<UserOutlined style={{color:'orange'}} />}>
-         <Link to="home" className="linkHead" smooth={true} duration={1000}>Home</Link>
-        </Menu.Item>
-        <Menu.Item className="menuItem" key="2" icon={<VideoCameraOutlined style={{color:'orange'}} />}>
-        <Link to="project" className="linkHead" smooth={true} duration={1000}>Projects</Link>
-        </Menu.Item>
-        <Menu.Item className="menuItem" key="3"  icon={<UploadOutlined style={{color:'orange'}} />}>
-        <Link to="skills" className="linkHead" smooth={true} duration={1000}>Skills</Link>
-        </Menu.Item>
+        <Menu style={{ backgroundColor: '#386fa4', borderStyle: 'none', width: '100%' }} mode="horizontal" >
+          <Menu.Item className="menuItem" key="1" icon={<HomeOutlined className="menuIcon" style={{ color: 'orange' }} />}>
+            <Link to="home" className="linkHead" smooth={true} duration={1000}>Home</Link>
+          </Menu.Item>
+          <Menu.Item className="menuItem" key="2" icon={<CodeFilled className="menuIcon" style={{ color: 'orange' }} />}>
+            <Link to="project" className="linkHead" smooth={true} duration={1000}>Projects</Link>
+          </Menu.Item>
+          <Menu.Item className="menuItem" key="3" icon={<BulbOutlined className="menuIcon" style={{ color: 'orange' }} />}>
+            <Link to="skills" className="linkHead" smooth={true} duration={1000}>Skills</Link>
+          </Menu.Item>
+          <Menu.Item className="menuItem" key="4" icon={<CommentOutlined className="menuIcon" style={{ color: 'orange' }} />}>
+            <Link to="contact" className="linkHead" smooth={true} duration={1000}>Contact</Link>
+          </Menu.Item>
         </Menu>
       </Header>
-      </div>
-    );
+    </div>
+  );
 
 };
 export default HeaderNav;

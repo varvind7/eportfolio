@@ -6,6 +6,7 @@
     background-attachment: fixed;
    background-size: cover;
    display: flex;
+   flex-direction: column;
    justify-content: center;
    align-items: center;
 }
@@ -17,10 +18,24 @@
 .introText {
     color: orange;
     font-size: 60px;
+    
     text-shadow: 3px 3px 5px black;
 }
 .name {
     color: white;
+}
+.resumeLink {
+   border: 2px solid white;
+   padding: 10px;
+   color: white;
+   font-size: 20px;
+   border-radius: 5px;
+   font-weight: 500;
+   font-family: 'Nunito', sans-serif;
+}
+.resumeLink:hover {
+    border: 2px solid orange;
+    color: orange;
 }
 
 @media only screen and (max-width: 500px) {

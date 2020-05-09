@@ -7,6 +7,7 @@
     "cra-template": "1.0.3",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-pdf": "^4.1.0",
     "react-scripts": "3.4.1",
     "react-scroll": "^1.7.16",
     "responsive-ant-menu": "^1.0.13"
