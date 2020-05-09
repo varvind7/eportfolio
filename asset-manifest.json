@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/eportfolio/static/css/main.aa71c7f1.chunk.css",
+    "main.js": "/eportfolio/static/js/main.6cf2d795.chunk.js",
+    "main.js.map": "/eportfolio/static/js/main.6cf2d795.chunk.js.map",
+    "runtime-main.js": "/eportfolio/static/js/runtime-main.6606c507.js",
+    "runtime-main.js.map": "/eportfolio/static/js/runtime-main.6606c507.js.map",
+    "static/css/2.35fcc229.chunk.css": "/eportfolio/static/css/2.35fcc229.chunk.css",
+    "static/js/2.2af03dfe.chunk.js": "/eportfolio/static/js/2.2af03dfe.chunk.js",
+    "static/js/2.2af03dfe.chunk.js.map": "/eportfolio/static/js/2.2af03dfe.chunk.js.map",
+    "index.html": "/eportfolio/index.html",
+    "precache-manifest.1df7ecc2476f36aa59c8c6f8b1fe978c.js": "/eportfolio/precache-manifest.1df7ecc2476f36aa59c8c6f8b1fe978c.js",
+    "service-worker.js": "/eportfolio/service-worker.js",
+    "static/css/2.35fcc229.chunk.css.map": "/eportfolio/static/css/2.35fcc229.chunk.css.map",
+    "static/css/main.aa71c7f1.chunk.css.map": "/eportfolio/static/css/main.aa71c7f1.chunk.css.map",
+    "static/js/2.2af03dfe.chunk.js.LICENSE.txt": "/eportfolio/static/js/2.2af03dfe.chunk.js.LICENSE.txt",
+    "static/media/MyBurger.JPG": "/eportfolio/static/media/MyBurger.5358eef0.JPG",
+    "static/media/antd.jfif": "/eportfolio/static/media/antd.db0d31a2.jfif",
+    "static/media/landingImg.css": "/eportfolio/static/media/coding.0968ad8a.jfif",
+    "static/media/cpp.jfif": "/eportfolio/static/media/cpp.2f3cc0ab.jfif",
+    "static/media/github.png": "/eportfolio/static/media/github.c4f8de5e.png",
+    "static/media/hospital.JPG": "/eportfolio/static/media/hospital.50df3dac.JPG",
+    "static/media/library.JPG": "/eportfolio/static/media/library.40c8e611.JPG",
+    "static/media/linkedin.png": "/eportfolio/static/media/linkedin.29fef915.png",
+    "static/media/profile.jpg": "/eportfolio/static/media/profile.24bdba75.jpg",
+    "static/media/resume.pdf": "/eportfolio/static/media/resume.aec696d0.pdf",
+    "static/media/vscode.jfif": "/eportfolio/static/media/vscode.4613a258.jfif",
+    "static/media/winhacks.JPG": "/eportfolio/static/media/winhacks.b8798e2b.JPG"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6606c507.js",
+    "static/css/2.35fcc229.chunk.css",
+    "static/js/2.2af03dfe.chunk.js",
+    "static/css/main.aa71c7f1.chunk.css",
+    "static/js/main.6cf2d795.chunk.js"
+  ]
+}
